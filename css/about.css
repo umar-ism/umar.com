@@ -131,7 +131,7 @@
     color: #302e4d;
     border-bottom: 1px solid #e8dfec;
 }
-.about .about-content .personal-info .info-item p span{
+.about .about-content .personal-info .info-item p div{
     font-weight: 400;
     color: #504e70;
     margin-left: 4px;
