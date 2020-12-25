@@ -1,3 +1,14 @@
+
+window.addEventListener("load", function(){
+    document.querySelector(".preloader").classList.add("opacity-0");
+
+    setTimeout(function(){
+        document.querySelector(".preloader").style.display="none";
+    },1000)
+})
+
+
+
 const filterContainer=document.querySelector(".portfolio-filter"),
 filterBtns=filterContainer.children,
 totalFilterBtn=filterBtns.length,
@@ -112,6 +123,10 @@ for(let i=0; i<totalNavList; i++){
 
         showSection(this);
 
+        if(window.innerWidth < 1200){
+            asideSectionTogglerBtn();
+        }
+
     })
 }
 
@@ -124,3 +139,19 @@ function showSection(element){
 
     document.querySelector("#"+target).classList.add("active");
 }
+
+
+
+
+const navTogglerBtn=document.querySelector(".nav-toggler"),
+        aside=document.querySelector(".aside");
+
+navTogglerBtn.addEventListener("click", asideSectionTogglerBtn)     
+
+function asideSectionTogglerBtn(){
+    aside.classList.toggle("open");
+    navTogglerBtn.classList.toggle("open");
+    for(let i=0; i<totalSection; i++){
+        allSection[i].classList.toggle("open");
+    }
+}    
