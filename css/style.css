@@ -28,7 +28,7 @@ body{
     min-height: 100vh;
     display: block;
     padding: 0 30px;
-    position: fixed;
+    /*position: fixed;
     left: 270px;
     top: 0;
     right: 0;
@@ -36,9 +36,12 @@ body{
     z-index: 0;
     opacity: 1;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: auto;*/
 }
-.setion.back-section{
+.main-content{
+    padding-left: 270px;
+}
+.section.back-section{
     z-index: 1;
 }
 .section.active{
