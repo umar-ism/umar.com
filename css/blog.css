@@ -6,6 +6,7 @@
     flex: 0 0 33.33%;
     max-width: 33.33%;
     margin-bottom: 30px;
+    display: flex;
 }
 
 .blog-img img{
@@ -22,10 +23,11 @@
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid #d4d4e3;
+    width: 100%;
+    background-color: #fdf9ff;
 }
 .blog-info{
     padding: 30px 15px;
-    background-color: #fdf9ff;
 }
 .blog-title{
     font-size: 18px;
